@@ -14,18 +14,17 @@ class Process:
 
 class MLFQScheduler:
     def __init__(self, num_queues, time_quantums):
-        # Each queue has a time quantum
         self.queues = [list() for _ in range(num_queues)]
         self.time_quantums = time_quantums
         self.current_time = 0
         self.completed_processes = []
 
     def add_process(self, process):
-        self.queues[0].append(process)  # Add to the highest-priority queue initially
+        self.queues[0].append(process)  
 
     def run(self):
         print("\nMLFQ Scheduling:")
-        while any(self.queues):  # Continue until all queues are empty
+        while any(self.queues):  
             for i, queue in enumerate(self.queues):
                 if queue:
                     self._execute_queue(queue, self.time_quantums[i])
@@ -38,11 +37,9 @@ class MLFQScheduler:
         print(f"Running process {process.id} from Queue-{self.queues.index(queue) + 1} "
               f"for {time_slice} units (remaining time: {process.remaining_time})")
 
-        # Simulate process execution
         self.current_time += time_slice
         process.remaining_time -= time_slice
 
-        # Check if process is completed
         if process.remaining_time == 0:
             process.completion_time = self.current_time
             process.turnaround_time = process.completion_time - process.arrival_time
@@ -50,12 +47,11 @@ class MLFQScheduler:
             self.completed_processes.append(process)
             print(f"Process {process.id} completed at time {self.current_time}")
         else:
-            # Demote the process to the next queue if available
             if self.queues.index(queue) + 1 < len(self.queues):
                 self.queues[self.queues.index(queue) + 1].append(process)
                 print(f"Process {process.id} moved to Queue-{self.queues.index(queue) + 2}")
             else:
-                queue.append(process)  # Stay in the last queue
+                queue.append(process)  
                 print(f"Process {process.id} stays in Queue-{len(self.queues)}")
 
     def print_stats(self):
@@ -65,15 +61,12 @@ class MLFQScheduler:
                   f"Turnaround Time = {process.turnaround_time}, Waiting Time = {process.waiting_time}")
 
 
-# Example Usage
 if __name__ == "__main__":
     scheduler = MLFQScheduler(num_queues=3, time_quantums=[4, 8, 16])
 
-    # Adding processes
     scheduler.add_process(Process(1, 0, 10))
     scheduler.add_process(Process(2, 1, 15))
     scheduler.add_process(Process(3, 2, 20))
 
-    # Run the scheduler
     scheduler.run()
     scheduler.print_stats()

@@ -22,7 +22,7 @@ class CPUScheduler:
 
     def fcfs(self):
         print("\nFCFS Scheduling")
-        self.processes.sort(key=lambda p: p.arrival_time)  # Sort by arrival time
+        self.processes.sort(key=lambda p: p.arrival_time) 
         current_time = 0
         for process in self.processes:
             if current_time < process.arrival_time:
@@ -35,7 +35,7 @@ class CPUScheduler:
 
     def sjn(self):
         print("\nSJN Scheduling")
-        self.processes.sort(key=lambda p: (p.arrival_time, p.burst_time))  # Sort by arrival time and burst time
+        self.processes.sort(key=lambda p: (p.arrival_time, p.burst_time))  
         current_time = 0
         completed = []
         while len(completed) < len(self.processes):
@@ -53,7 +53,7 @@ class CPUScheduler:
 
     def round_robin(self, quantum):
         print("\nRound-Robin Scheduling")
-        queue = sorted(self.processes, key=lambda p: p.arrival_time)  # Sort by arrival time
+        queue = sorted(self.processes, key=lambda p: p.arrival_time)  
         current_time = 0
         while queue:
             process = queue.pop(0)
@@ -72,7 +72,7 @@ class CPUScheduler:
 
     def priority_scheduling(self):
         print("\nPriority Scheduling")
-        self.processes.sort(key=lambda p: (p.arrival_time, p.priority))  # Sort by arrival time and priority
+        self.processes.sort(key=lambda p: (p.arrival_time, p.priority))  
         current_time = 0
         for process in self.processes:
             if current_time < process.arrival_time:
@@ -88,18 +88,14 @@ class CPUScheduler:
               f"Turnaround Time = {process.turnaround_time}, Waiting Time = {process.waiting_time}")
 
 
-
-# Example Usage
 if __name__ == "__main__":
     scheduler = CPUScheduler()
 
-    # Adding processes
     scheduler.add_process(Process(1, 0, 8, priority=3))
     scheduler.add_process(Process(2, 1, 4, priority=1))
     scheduler.add_process(Process(3, 2, 9, priority=2))
     scheduler.add_process(Process(4, 3, 5, priority=4))
 
-    # Execute different scheduling schemes
     scheduler.fcfs()
     scheduler.sjn()
     scheduler.round_robin(quantum=3)

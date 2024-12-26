@@ -1,15 +1,13 @@
 
 def main():
-	# Taking the number of processes
 	n = int(input("Enter number of process: "))
-	# Matrix for storing Process Id, Burst Time, Average Waiting Time & Average Turn Around Time.
 	A = [[0 for j in range(4)] for i in range(100)]
 	total, avg_wt, avg_tat = 0, 0, 0
 	print("Enter Burst Time:")
-	for i in range(n): # User Input Burst Time and alloting Process Id.
+	for i in range(n):
 		A[i][1] = int(input(f"P{i+1}: "))
 		A[i][0] = i + 1
-	for i in range(n): # Sorting process according to their Burst Time.
+	for i in range(n): 
 		index = i
 		for j in range(i + 1, n):
 			if A[j][1] < A[index][1]:
@@ -20,7 +18,7 @@ def main():
 		temp = A[i][0]
 		A[i][0] = A[index][0]
 		A[index][0] = temp
-	A[0][2] = 0 # Calculation of Waiting Times
+	A[0][2] = 0 
 	for i in range(1, n):
 		A[i][2] = 0
 		for j in range(i):
@@ -28,7 +26,6 @@ def main():
 		total += A[i][2]
 	avg_wt = total / n
 	total = 0
-	# Calculation of Turn Around Time and printing the data.
 	print("P	 BT	 WT	 TAT")
 	for i in range(n):
 		A[i][3] = A[i][1] + A[i][2]
