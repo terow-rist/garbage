@@ -1,11 +1,14 @@
 import math
 import matplotlib.pyplot as plt 
+# def func(x):
+#     return x*math.exp(x)-1
 def func(x):
-    return x*math.exp(x)-1
+    return x**3-x-1
+
 
 def f_bisection():
-    a, b = 0, 1
-    err = 1e-5
+    a, b = 1, 2
+    err = 1e-10
     c = 0
 
     iterations, roots = [], []
@@ -15,12 +18,14 @@ def f_bisection():
             a = xi 
         else:
             b = xi
-        # print("x{}: {}".format(c, xi))
+        print("x{}: {}".format(c, xi))
         iterations.append(c)
         roots.append(xi)
         # delta_x.append(abs(a-b))
         c += 1
     return iterations, roots
+
+f_bisection()
 
 # plt.subplot(1, 2, 1)
 # plt.plot(iterations, roots, "r-", marker="o")

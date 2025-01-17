@@ -3,15 +3,15 @@ import matplotlib.pyplot as plt
 import sympy as sym 
 from sympy import *
 
-# n, m = int(input("number of rows: ")), int(input("number of col: "))
+n, m = int(input("number of rows: ")), int(input("number of col: "))
 e = 1e-5
 
-matrix = [
-    [5, 2, 1, 7],
-    [-1, 4, 2, 3],
-    [2, -3, 10, -1]
-]
-# matrix = matrix_logic.matrix_init(n, m)
+# matrix = [
+#     [5, 2, 1, 7],
+#     [-1, 4, 2, 3],
+#     [2, -3, 10, -1]
+# ]
+matrix = matrix_logic.matrix_init(n, m)
 
 # Initial values of each Xi in the matrix
 x_list = [-2.4, 5.0, 1]  # Initial guesses

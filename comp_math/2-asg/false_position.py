@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import math
 def f(x):
-    return x-math.exp(-x)
+    return  x**2-2*x-5
 
 def f_false_position():
-    a, b = 0, 1
+    a, b = 1, 0
     err = 1e-5
     iterations, roots = [], []
     c = 0
@@ -14,7 +14,7 @@ def f_false_position():
             a = xi 
         else:
             b = xi 
-        # print("x{}: {}".format(c, xi))
+        print("x{}: {}".format(c, xi))
         iterations.append(c)
         roots.append(xi)
         prevxi = xi
@@ -22,9 +22,11 @@ def f_false_position():
         c += 1  
     return iterations, roots
 
-# plt.plot(iterations, roots, "r-",marker="o")
-# plt.grid() 
-# plt.xlabel("iterations")
-# plt.ylabel("X's roots")
-# plt.show()
+iterations, roots = f_false_position()
+
+plt.plot(iterations, roots, "r-",marker="o")
+plt.grid() 
+plt.xlabel("iterations")
+plt.ylabel("X's roots")
+plt.show()
     
