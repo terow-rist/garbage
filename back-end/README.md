@@ -7,9 +7,7 @@ This is a simple API built using FastAPI to calculate Body Mass Index (BMI) base
 - Validates the input values for correctness.
 - Calculates BMI using the formula:
   
-  \[
-  BMI = \frac{\text{weight (kg)}}{\text{height (m)}^2}
-  \]
+  [BMI = weight/height^2]
 
 - Returns the calculated BMI rounded to two decimal places.
 - Provides a classification of the BMI into one of the following categories:
