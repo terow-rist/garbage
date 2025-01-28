@@ -1,0 +1,174 @@
+-------------- CPU INFO ------------------
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               8
+On-line CPU(s) list:                  0-7
+Vendor ID:                            GenuineIntel
+Model name:                           11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+CPU family:                           6
+Model:                                140
+Thread(s) per core:                   2
+Core(s) per socket:                   4
+Socket(s):                            1
+Stepping:                             1
+CPU(s) scaling MHz:                   37%
+CPU max MHz:                          4200,0000
+CPU min MHz:                          400,0000
+BogoMIPS:                             4840,00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities
+Virtualization:                       VT-x
+L1d cache:                            192 KiB (4 instances)
+L1i cache:                            128 KiB (4 instances)
+L2 cache:                             5 MiB (4 instances)
+L3 cache:                             8 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-7
+Vulnerability Gather data sampling:   Mitigation; Microcode
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+-------------- memory(RAM) INFO ------------------
+               total        used        free      shared  buff/cache   available
+Mem:           15790        3162       10653        1008        3316       12627
+Swap:              0           0           0
+
+-------------- Disk space usage INFO ------------------
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p5   98G   31G   63G  34% /
+devtmpfs        4,0M     0  4,0M   0% /dev
+tmpfs           7,8G     0  7,8G   0% /dev/shm
+efivarfs        184K  155K   25K  87% /sys/firmware/efi/efivars
+tmpfs           3,1G  2,0M  3,1G   1% /run
+tmpfs           1,0M     0  1,0M   0% /run/credentials/systemd-journald.service
+tmpfs           7,8G  8,0K  7,8G   1% /tmp
+/dev/nvme0n1p1  256M   57M  200M  23% /boot/efi
+tmpfs           1,6G   88K  1,6G   1% /run/user/1000
+
+-------------- summary of hardware components INFO ------------------
+H/W path       Device          Class          Description
+=========================================================
+                               system         82BH (LENOVO_MT_82BH_BU_idea_FM_Yoga 7 14ITL5)
+/0                             bus            LNVNB161216
+/0/0                           memory         128KiB BIOS
+/0/4                           processor      11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+/0/4/6                         memory         128KiB L1 cache
+/0/4/7                         memory         5MiB L2 cache
+/0/4/8                         memory         8MiB L3 cache
+/0/5                           memory         192KiB L1 cache
+/0/24                          memory         16GiB System Memory
+/0/24/0                        memory         8GiB Row of chips DDR4 Synchronous 3200 MHz (0,3 ns)
+/0/24/1                        memory         8GiB Row of chips DDR4 Synchronous 3200 MHz (0,3 ns)
+/0/100                         bridge         11th Gen Core Processor Host Bridge/DRAM Registers
+/0/100/2       /dev/fb0        display        TigerLake-LP GT2 [Iris Xe Graphics]
+/0/100/4                       generic        TigerLake-LP Dynamic Tuning Processor Participant
+/0/100/7                       bridge         Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #0
+/0/100/7.1                     bridge         Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #1
+/0/100/7.2                     bridge         Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #2
+/0/100/7.3                     bridge         Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #3
+/0/100/a                       generic        Tigerlake Telemetry Aggregator Driver
+/0/100/d                       bus            Tiger Lake-LP Thunderbolt 4 USB Controller
+/0/100/d/0     usb1            bus            xHCI Host Controller
+/0/100/d/1     usb2            bus            xHCI Host Controller
+/0/100/d.2                     bus            Tiger Lake-LP Thunderbolt 4 NHI #0
+/0/100/d.3                     bus            Tiger Lake-LP Thunderbolt 4 NHI #1
+/0/100/e                       storage        Volume Management Device NVMe RAID Controller
+/0/100/12                      communication  Tiger Lake-LP Integrated Sensor Hub
+/0/100/14                      bus            Tiger Lake-LP USB 3.2 Gen 2x1 xHCI Host Controller
+/0/100/14/0    usb3            bus            xHCI Host Controller
+/0/100/14/0/1  input11         input          Logitech Wireless Receiver Mouse
+/0/100/14/0/8                  multimedia     Integrated Camera
+/0/100/14/0/9                  generic        Goodix FingerPrint Device
+/0/100/14/0/a                  communication  AX201 Bluetooth
+/0/100/14/1    usb4            bus            xHCI Host Controller
+/0/100/14.2                    memory         RAM memory
+/0/100/14.3    wlan0           network        Wi-Fi 6 AX201
+/0/100/15                      bus            Tiger Lake-LP Serial IO I2C Controller #0
+/0/100/15.1                    bus            Tiger Lake-LP Serial IO I2C Controller #1
+/0/100/16                      communication  Tiger Lake-LP Management Engine Interface
+/0/100/1d                      generic        RST VMD Managed Controller
+/0/100/1e                      communication  Tiger Lake-LP Serial IO UART Controller #0
+/0/100/1e.3                    bus            Tiger Lake-LP Serial IO SPI Controller #1
+/0/100/1f                      bridge         Tiger Lake-LP LPC Controller
+/0/100/1f/0                    system         Motherboard registers
+/0/100/1f/1                    generic        PnP device INT3f0d
+/0/100/1f/2                    input          IBM Enhanced keyboard controller (101/2-key)
+/0/100/1f/3                    system         Motherboard registers
+/0/100/1f/4                    system         Motherboard registers
+/0/100/1f/5                    system         Motherboard registers
+/0/100/1f/6                    system         Motherboard registers
+/0/100/1f/7    input18         input          Ideapad extra buttons
+/0/100/1f.3    card0           multimedia     Tiger Lake-LP Smart Sound Technology Audio Controller
+/0/100/1f.4                    bus            Tiger Lake-LP SMBus Controller
+/0/100/1f.5                    bus            Tiger Lake-LP SPI Controller
+/0/1d                          bridge         Tiger Lake-LP PCI Express Root Port #9
+/0/1d/0                        storage        NVMe SSD Controller 980 (DRAM-less)
+/1                             power          CRB Battery 0
+/2                             power          OEM Define 5
+/3             /dev/nvme0      storage        SAMSUNG MZALQ512HBLU-00BL2
+/3/0           hwmon2          disk           NVMe disk
+/3/2           /dev/ng0n1      disk           NVMe disk
+/3/1           /dev/nvme0n1    disk           512GB NVMe disk
+/3/1/1                         volume         259MiB Windows FAT volume
+/3/1/2         /dev/nvme0n1p2  volume         15MiB reserved partition
+/3/1/3         /dev/nvme0n1p3  volume         375GiB Windows NTFS volume
+/3/1/4         /dev/nvme0n1p4  volume         999MiB Windows NTFS volume
+/3/1/5         /dev/nvme0n1p5  volume         100GiB EXT4 volume
+/4             input0          input          Lid Switch
+/5             input1          input          Power Button
+/6             input12         input          ELAN06FA:00 04F3:3138 Mouse
+/7             input14         input          ELAN06FA:00 04F3:3138 Touchpad
+/8             input15         input          Wacom HID 5250 Pen
+/9             input16         input          Wacom HID 5250 Finger
+/a             input19         input          Lenovo Yoga Tablet Mode Control switch
+/b             input2          input          AT Translated Set 2 keyboard
+/c             input20         input          PC Speaker
+/d             input21         input          Video Bus
+/e             input22         input          sof-hda-dsp Headset Mic
+/f             input23         input          sof-hda-dsp Headphone
+/10            input24         input          sof-hda-dsp HDMI/DP,pcm=3
+/11            input25         input          sof-hda-dsp HDMI/DP,pcm=4
+/12            input26         input          sof-hda-dsp HDMI/DP,pcm=5
+
+-------------- PCI devices INFO ------------------
+0000:00:00.0 Host bridge: Intel Corporation 11th Gen Core Processor Host Bridge/DRAM Registers (rev 01)
+0000:00:02.0 VGA compatible controller: Intel Corporation TigerLake-LP GT2 [Iris Xe Graphics] (rev 01)
+0000:00:04.0 Signal processing controller: Intel Corporation TigerLake-LP Dynamic Tuning Processor Participant (rev 01)
+0000:00:07.0 PCI bridge: Intel Corporation Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #0 (rev 01)
+0000:00:07.1 PCI bridge: Intel Corporation Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #1 (rev 01)
+0000:00:07.2 PCI bridge: Intel Corporation Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #2 (rev 01)
+0000:00:07.3 PCI bridge: Intel Corporation Tiger Lake-LP Thunderbolt 4 PCI Express Root Port #3 (rev 01)
+0000:00:0a.0 Signal processing controller: Intel Corporation Tigerlake Telemetry Aggregator Driver (rev 01)
+0000:00:0d.0 USB controller: Intel Corporation Tiger Lake-LP Thunderbolt 4 USB Controller (rev 01)
+0000:00:0d.2 USB controller: Intel Corporation Tiger Lake-LP Thunderbolt 4 NHI #0 (rev 01)
+0000:00:0d.3 USB controller: Intel Corporation Tiger Lake-LP Thunderbolt 4 NHI #1 (rev 01)
+0000:00:0e.0 RAID bus controller: Intel Corporation Volume Management Device NVMe RAID Controller
+0000:00:12.0 Serial controller: Intel Corporation Tiger Lake-LP Integrated Sensor Hub (rev 20)
+0000:00:14.0 USB controller: Intel Corporation Tiger Lake-LP USB 3.2 Gen 2x1 xHCI Host Controller (rev 20)
+0000:00:14.2 RAM memory: Intel Corporation Tiger Lake-LP Shared SRAM (rev 20)
+0000:00:14.3 Network controller: Intel Corporation Wi-Fi 6 AX201 (rev 20)
+0000:00:15.0 Serial bus controller: Intel Corporation Tiger Lake-LP Serial IO I2C Controller #0 (rev 20)
+0000:00:15.1 Serial bus controller: Intel Corporation Tiger Lake-LP Serial IO I2C Controller #1 (rev 20)
+0000:00:16.0 Communication controller: Intel Corporation Tiger Lake-LP Management Engine Interface (rev 20)
+0000:00:1d.0 System peripheral: Intel Corporation RST VMD Managed Controller
+0000:00:1e.0 Communication controller: Intel Corporation Tiger Lake-LP Serial IO UART Controller #0 (rev 20)
+0000:00:1e.3 Serial bus controller: Intel Corporation Tiger Lake-LP Serial IO SPI Controller #1 (rev 20)
+0000:00:1f.0 ISA bridge: Intel Corporation Tiger Lake-LP LPC Controller (rev 20)
+0000:00:1f.3 Multimedia audio controller: Intel Corporation Tiger Lake-LP Smart Sound Technology Audio Controller (rev 20)
+0000:00:1f.4 SMBus: Intel Corporation Tiger Lake-LP SMBus Controller (rev 20)
+0000:00:1f.5 Serial bus controller: Intel Corporation Tiger Lake-LP SPI Controller (rev 20)
+10000:e0:1d.0 PCI bridge: Intel Corporation Tiger Lake-LP PCI Express Root Port #9 (rev 20)
+10000:e1:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller 980 (DRAM-less)
+
