@@ -10,7 +10,7 @@ while true; do
 
     sleep 20
     
-    xsetroot -name "ToTa TatO!"
+    xsetroot -name "[ToTa TatO!]"
     
     sleep 10
 
