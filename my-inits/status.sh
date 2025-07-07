@@ -8,11 +8,7 @@ while true; do
 
     xsetroot -name "[BL: $bl$DELIM$datetime]"
 
-    sleep 20
-    
-    xsetroot -name "[ToTa TatO!]"
-    
-    sleep 10
+    sleep 15
 
 done
 
