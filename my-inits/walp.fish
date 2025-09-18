@@ -1,1 +1,1 @@
-feh --bg-scale /opt/pictures/lb.png
+feh --bg-scale /opt/pictures/nero.jpg
